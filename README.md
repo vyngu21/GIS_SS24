@@ -11,3 +11,5 @@ Dadurch entsteht unter der Spalte eine Liste mit Aufgaben, auf die Benutzer jede
 Abschließend ist die Hauptaufgabe dieser Webanwendung, die Verwaltung einer To-Do-Liste.
 Der Benutzer hat die Möglichkeit den Status der Aufgabe zu bearbeiten, indem er diese abhakt, wenn er sie erledigt hat.
 Anschließend kann die erledigte bzw. abgehakte Aufgabe ebenfalls entfernt werden, um eine bessere Übersicht über die noch zu erledigenden Aufgaben zu haben.
+
+Um es noch mehr zu individualisieren würde ich noch ein Soundeffekt miteinbauen, wenn die Aufgabe abgehakt wird.
