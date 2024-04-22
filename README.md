@@ -12,4 +12,6 @@ Abschließend ist die Hauptaufgabe dieser Webanwendung, die Verwaltung einer To-
 Der Benutzer hat die Möglichkeit den Status der Aufgabe zu bearbeiten, indem er diese abhakt, wenn er sie erledigt hat.
 Anschließend kann die erledigte bzw. abgehakte Aufgabe ebenfalls entfernt werden, um eine bessere Übersicht über die noch zu erledigenden Aufgaben zu haben.
 
-Um es noch mehr zu individualisieren, würde ich noch ein Soundeffekt miteinbauen, wenn die Aufgabe abgehakt wird.
+Um es noch mehr zu individualisieren, würde ich noch ein Soundeffekt miteinbauen, wenn die Aufgabe hinzugefügt wird.
+Außerdem wird ein Level-Balken vorhanden sein, wo man sieht auf welchem Stand oder Level man momentan ist, das bedeutet, wenn man 5 Aufgaben hinzugefügt hat und erst eine davon erledigt hat, dann ist man erst auf Level 1 von 5. Je nachdem wie es mir gefällt, werde ich den Balken nach Level oder nach Prozenten angeben. Wenn es nach Prozenten angegeben wird, würde es bis zu 100% gehen und wie im vorherigen Beispiel, wäre der Nutzer statt Level 1, erst bei 20%.
+Wenn der Nutzer das Ziel erreicht hat, kommt ein Motivationsspruch, dafür, dass er seine Aufgaben erledigt hat.
