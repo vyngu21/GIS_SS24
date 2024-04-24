@@ -3,6 +3,7 @@
 Eine _gewöhnliche_ **To-Do-List** Webanwendung, die es Benutzern ermöglicht, **Aufgaben hinzuzufügen, anzuzeigen, zu bearbeiten, zu entfernen und abzuhaken.**
 
 ## Seitenstruktur und Funktionsweise
+Vor der "richtigen Hauptseite" ist eine Startseite, wo man alle Wochentage auf einer Leiste/ auf einem Balken sehen kann und wenn man auf eins davon klickt, kann man für den ausgewählten Wochentag, eine To-Do-List erstellen.
 Die Hauptseite ist die zentrale Ansicht der Webanwendung. Dort werden alle vorhandenen Aufgaben angezeigt.
 Auf der Seite sieht man die fettgedruckte Überschrift **"To-Do-List"** und unter der Überschrift, ist eine Spalte, wo der Benutzer seine Aufgaben hineinschreiben kann.
 Die Aufgaben werden mit einem Klick auf den Button **"Add"**, welcher sich neben der Spalte befindet, in die Liste hinzugefügt.
