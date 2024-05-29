@@ -1,0 +1,97 @@
+JS To-Do-List
+
+document.addEventListener('DOMContentLoaded', () => {
+    const addButton = document.getElementById('addButton');
+    const taskInput = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');
+    const levelBar = document.querySelector('.level-bar');
+
+    loadTasks();
+
+    addButton.addEventListener('click', () => {
+        const taskText = taskInput.value.trim();
+
+        if (taskText !== '') {
+            addTask(taskText, false);
+            taskInput.value = '';
+            taskInput.focus();
+            updateProgress();
+            saveTasks();
+        }
+    });
+
+    function addTask(taskText, completed) {
+        const listItem = document.createElement('li');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = completed;
+
+        const taskSpan = document.createElement('span');
+        taskSpan.textContent = taskText;
+
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'x';
+        removeButton.classList.add('remove-button');
+        removeButton.addEventListener('click', () => {
+            listItem.remove();
+            updateProgress();
+            saveTasks();
+        });
+
+        checkbox.addEventListener('change', () => {
+            updateProgress();
+            saveTasks();
+        });
+
+        listItem.appendChild(checkbox);
+        listItem.appendChild(taskSpan);
+        listItem.appendChild(removeButton);
+        taskList.appendChild(listItem);
+
+        updateProgress();
+    }
+
+    function updateProgress() { //Bei der Progress Bar habe ich im vieles aus dem Internet und von ChatGPT
+        const tasks = taskList.getElementsByTagName('li');
+        const totalTasks = tasks.length;
+        const completedTasks = taskList.querySelectorAll('input[type="checkbox"]:checked').length;
+
+        const progress = totalTasks > 0 ? (completedTasks / totalTasks) * 100 : 0;
+        levelBar.style.width = `${progress}%`;
+
+        if (progress === 100) {
+            levelBar.classList.add('complete');
+        } else {
+            levelBar.classList.remove('complete');
+        }
+
+        Array.from(tasks).forEach(task => {
+            const checkbox = task.querySelector('input[type="checkbox"]');
+            const taskSpan = task.querySelector('span');
+            if (checkbox.checked) {
+                taskSpan.style.textDecoration = 'line-through';
+            } else {
+                taskSpan.style.textDecoration = 'none';
+            }
+        });
+    }
+
+    function saveTasks() {
+        const tasks = [];
+        Array.from(taskList.children).forEach(listItem => {
+            const checkbox = listItem.querySelector('input[type="checkbox"]');
+            const taskSpan = listItem.querySelector('span');
+            tasks.push({ text: taskSpan.textContent, completed: checkbox.checked });
+        });
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    function loadTasks() {
+        const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        tasks.forEach(task => addTask(task.text, task.completed));
+        updateProgress();
+    }
+
+    // Ensure existing tasks are taken into account
+    updateProgress();
+});
