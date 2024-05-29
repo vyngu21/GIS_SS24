@@ -1,0 +1,29 @@
+Startseite der To-Do-List:
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <title>💗To-Do-List💗</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>💗To-Do-List💗</header>
+    <div class="mainNav">
+        <a href="http://127.0.0.1:5500/todolist1funktion.html">STARTSEITE</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">MO</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">DI</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">MI</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">DO</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">FR</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">SA</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">SO</a>
+    </div>
+    <main>
+        <p>Diese To-Do-List motiviert dich, deine Aufgaben zu erledigen!
+            Starte deine Woche mit dem Planen, um dein Alltag leichter zu gestalten!
+            Wähle oben ein Wochentag aus und schreibe deine Aufgaben für diesen Tag hinein.
+        </p>
+        <img src="AC053BB7-2FF5-4834-BAE2-9F8A86466846.jpg" alt="Hauptbild">
+    </main>
+</body>
+</html>
