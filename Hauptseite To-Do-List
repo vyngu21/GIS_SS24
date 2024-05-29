@@ -1,0 +1,36 @@
+Hauptseite der To-Do-List
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💗To-Do-List💗</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="todolist.js" defer></script>
+</head>
+<body>
+    <header>💗To-Do-List💗</header>
+    <div class="mainNav">
+        <a href="http://127.0.0.1:5500/todolist1funktion.html">STARTSEITE</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">MO</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">DI</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">MI</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">DO</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">FR</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">SA</a>
+        <a href="http://127.0.0.1:5500/todolist2funktion.html">SO</a>
+    </div>
+    <main>
+        <div class="level-bar">
+            <div class="level" style="width: 100%;"></div>
+        </div>
+        <div class="wrapper">
+            <input id="taskInput" type="text" placeholder="Gebe eine Aufgabe ein...">
+            <button id="addButton" class="add-button">Hinzufügen</button>
+        </div>
+        <ul id="taskList">
+        </ul>
+    </main>
+</body>
+</html>
