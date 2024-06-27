@@ -1,97 +1,69 @@
 {
-"selectedDay": "tasksMo",
-"tasksMo": [
-  {
-    "text": "Käse",
-    "completed": false
-  },
-  {
-    "text": "Katze kaufen",
-    "completed": false
-  },
-  {
-    "text": "Milch trinken",
-    "completed": false
-  },
-  {
-    "text": "Einkaufen gehen",
-    "completed": false
-  },
-  {
-    "text": "Laptop reparieren",
-    "completed": false
-  }
-],
-"tasksDi": [
-  {
-    "text": "Mehl",
-    "completed": false
-  },
-  {
-    "text": "Butter",
-    "completed": false
-  },
-  {
-    "text": "Honig",
-    "completed": false
-  },
-  {
-    "text": "Trauben",
-    "completed": false
-  }
-],
-"tasksMi": [
-  {
-    "text": "Eier",
-    "completed": false
-  },
-  {
-    "text": "Zucker",
-    "completed": false
-  },
-  {
-    "text": "Auto waschen",
-    "completed": false
-  }
-],
-"tasksDo": [
-  {
-    "text": "Salz",
-    "completed": false
-  },
-  {
-    "text": "Pfeffer",
-    "completed": false
-  }
-],
-"tasksFr": [
-  {
-    "text": "Milch",
-    "completed": false
-  },
-  {
-    "text": "Schokolade",
-    "completed": false
-  }
-],
-"tasksSa": [
-  {
-    "text": "Öl",
-    "completed": false
-  },
-  {
-    "text": "Nutella",
-    "completed": false
-  }
-],
-"tasksSo": [
-  {
-    "text": "Margarine",
-    "completed": false
-  },
-  {
-    "text": "Tee",
-    "completed": false
-  }
-]
+  "selectedDay": "tasksMo",
+  "tasksMo": [
+    {
+      "text": "Sahne",
+      "completed": false
+    },
+    {
+      "text": "Käse",
+      "completed": false
+    },
+    {
+      "text": "meowmeow",
+      "completed": false
+    }
+  ],
+  "tasksDi": [
+    {
+      "text": "Mehl",
+      "completed": false
+    },
+    {
+      "text": "Butter",
+      "completed": false
+    }
+  ],
+  "tasksMi": [
+    {
+      "text": "Eier",
+      "completed": false
+    },
+    {
+      "text": "Zucker",
+      "completed": false
+    }
+  ],
+  "tasksDo": [
+    {
+      "text": "Salz",
+      "completed": false
+    },
+    {
+      "text": "Pfeffer",
+      "completed": false
+    }
+  ],
+  "tasksFr": [
+    {
+      "text": "Milch",
+      "completed": false
+    },
+    {
+      "text": "Schokolade",
+      "completed": false
+    }
+  ],
+  "tasksSa": [
+    {
+      "text": "Öl",
+      "completed": false
+    }
+  ],
+  "tasksSo": [
+    {
+      "text": "Margarine",
+      "completed": false
+    }
+  ]
 }
