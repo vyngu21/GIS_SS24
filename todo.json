@@ -2,25 +2,33 @@
   "selectedDay": "tasksMo",
   "tasksMo": [
     {
-      "text": "Sahne",
-      "completed": false
+      "text": "Kochen",
+      "completed": true
     },
     {
-      "text": "Käse",
-      "completed": false
+      "text": "Fußball schauen",
+      "completed": true
     },
     {
-      "text": "meowmeow",
-      "completed": false
+      "text": "Wäsche machen",
+      "completed": true
+    },
+    {
+      "text": "Milch holen",
+      "completed": true
     }
   ],
   "tasksDi": [
     {
-      "text": "Mehl",
+      "text": "Milch trinken",
       "completed": false
     },
     {
-      "text": "Butter",
+      "text": "Einkaufen",
+      "completed": false
+    },
+    {
+      "text": "Katze waschen",
       "completed": false
     }
   ],
@@ -36,12 +44,20 @@
   ],
   "tasksDo": [
     {
-      "text": "Salz",
-      "completed": false
+      "text": "xcacaca",
+      "completed": true
     },
     {
-      "text": "Pfeffer",
-      "completed": false
+      "text": "acsac",
+      "completed": true
+    },
+    {
+      "text": "sac",
+      "completed": true
+    },
+    {
+      "text": "sac",
+      "completed": true
     }
   ],
   "tasksFr": [
@@ -61,6 +77,20 @@
     }
   ],
   "tasksSo": [
+    {
+      "text": "Milch trinken",
+      "completed": true
+    },
+    {
+      "text": "Einkaufen",
+      "completed": true
+    },
+    {
+      "text": "Katze waschen",
+      "completed": true
+    }
+  ],
+  "tasks": [
     {
       "text": "Margarine",
       "completed": false
