@@ -1,0 +1,97 @@
+{
+  "selectedDay": "tasksMo",
+  "tasksMo": [
+    {
+      "text": "Käse",
+      "completed": false
+    },
+    {
+      "text": "meowmeow",
+      "completed": false
+    },
+    {
+      "text": "sdfsdf",
+      "completed": false
+    },
+    {
+      "text": "dfssd",
+      "completed": false
+    },
+    {
+      "text": "ds",
+      "completed": false
+    }
+  ],
+  "tasksDi": [
+    {
+      "text": "Mehl",
+      "completed": false
+    },
+    {
+      "text": "Butter",
+      "completed": false
+    },
+    {
+      "text": "df",
+      "completed": false
+    },
+    {
+      "text": "sdf",
+      "completed": false
+    }
+  ],
+  "tasksMi": [
+    {
+      "text": "Eier",
+      "completed": false
+    },
+    {
+      "text": "Zucker",
+      "completed": false
+    },
+    {
+      "text": "df",
+      "completed": false
+    }
+  ],
+  "tasksDo": [
+    {
+      "text": "Salz",
+      "completed": false
+    },
+    {
+      "text": "Pfeffer",
+      "completed": false
+    }
+  ],
+  "tasksFr": [
+    {
+      "text": "Milch",
+      "completed": false
+    },
+    {
+      "text": "Schokolade",
+      "completed": false
+    }
+  ],
+  "tasksSa": [
+    {
+      "text": "Öl",
+      "completed": false
+    },
+    {
+      "text": "sdsadasd",
+      "completed": false
+    }
+  ],
+  "tasksSo": [
+    {
+      "text": "Margarine",
+      "completed": false
+    },
+    {
+      "text": "Tee",
+      "completed": false
+    }
+  ]
+}
