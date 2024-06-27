@@ -1,13 +1,12 @@
-async function requestTextWithGET(url) { //meow
+async function requestTextWithGET(url) {
     try {
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const text = await response.text();
-        return text;
+        return await response.text();
     } catch (error) {
-        console.error('Failed to fetch the tasks:', error);
+        console.error('Fetch error:', error);
         return null;
     }
 }
@@ -18,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('taskList');
     const levelBar = document.querySelector('.level-bar');
     const dayLinks = document.querySelectorAll('.mainNav a');
+    let currentDay = 'tasksMo'; // Default to Monday
 
     // Beim Laden der Seite die Aufgaben für den aktuellen Tag laden
     loadTasks();
@@ -33,6 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
             updateProgress();
             saveTasks();
         }
+    });
+
+    // Eventlistener für Tag-Links
+    dayLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            currentDay = link.getAttribute('href').split('=')[1];
+            localStorage.setItem('tasksAnzeigen', currentDay);
+            loadTasks();
+        });
     });
 
     // Funktion zum Hinzufügen einer Aufgabe zur Liste
@@ -123,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Funktion zum Laden der Aufgaben für den aktuellen Tag über einen GET-Request
     async function loadTasks() {
         const params = new URLSearchParams(window.location.search);
-        const currentDay = params.get('tasksAnzeigen') || localStorage.getItem('tasksAnzeigen') || 'tasksMo'; // URL-Parameter hat Vorrang
+        currentDay = params.get('tasksAnzeigen') || localStorage.getItem('tasksAnzeigen') || 'tasksMo'; // URL-Parameter hat Vorrang
         localStorage.setItem('tasksAnzeigen', currentDay); // Speichere den aktuellen Tag im localStorage
         const url = `/tasks/${currentDay}`;
         const tasksText = await requestTextWithGET(url);
@@ -143,16 +153,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initiale Aktualisierung des Fortschritts
     updateProgress();
 });
-
-async function requestTextWithGET(url) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return await response.text();
-    } catch (error) {
-        console.error('Fetch error:', error);
-        return null;
-    }
-}
